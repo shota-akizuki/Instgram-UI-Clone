@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import '../screen/main_page.dart';
 
 class MainModel extends ChangeNotifier {
   int counter = 0;
@@ -9,8 +10,7 @@ class MainModel extends ChangeNotifier {
   }
 
   int currentIndex = 0;
-
-  void selectedIndex(index) {
+  void selectIndex(index) {
     currentIndex = index;
     notifyListeners();
   }
