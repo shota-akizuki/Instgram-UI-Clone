@@ -1,17 +1,9 @@
-import 'package:flutter/cupertino.dart';
-import '../screen/main_page.dart';
+import 'package:flutter/material.dart';
 
 class MainModel extends ChangeNotifier {
-  int counter = 0;
-
-  void incrementCounter() {
-    counter++;
-    notifyListeners();
-  }
-
-  int currentIndex = 0;
-  void selectIndex(index) {
-    currentIndex = index;
+  bool favorite = false;
+  void changeFavorite() {
+    favorite = !favorite;
     notifyListeners();
   }
 }

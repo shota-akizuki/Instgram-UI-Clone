@@ -10,6 +10,30 @@ class ProfilePage extends StatelessWidget {
       create: (_) => MainModel(),
       builder: (context, snapshot) {
         return Scaffold(
+          appBar: AppBar(
+            leading: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.camera_alt,
+                  color: Colors.black54,
+                )),
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(
+                  Icons.send,
+                  color: Colors.black54,
+                ),
+                onPressed: () {
+                  //todo:DMを送信
+                },
+              ),
+            ],
+            backgroundColor: Colors.white,
+            title: Text(
+              'Instagram',
+              style: TextStyle(color: Colors.black54),
+            ),
+          ),
           body: CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(
